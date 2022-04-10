@@ -9,7 +9,6 @@ pipeline {
         stage('test') {
             steps {
                 echo 'testing Dev...'
-                docker build . --file Dockerfile --tag my-image-name:$(date +%s)
             }
         }
         stage('deploy') {
