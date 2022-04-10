@@ -1,4 +1,6 @@
-[![Build Status](https://app.travis-ci.com/dhomane/cf-example-build-and-push.svg?branch=main)](https://app.travis-ci.com/dhomane/cf-example-build-and-push)
+[![CircleCI](https://circleci.com/gh/dhomane/cf-example-build-and-push/tree/master.svg?style=svg)](https://circleci.com/gh/dhomane/cf-example-build-and-push/tree/master)
+
+
 
 # Example of building and pushing a  docker image 
 
