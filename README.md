@@ -1,3 +1,5 @@
+![GitHub CI](https://github.com/dhomane/cf-example-build-and-push/actions/workflows/ci.yml/badge.svg)
+
 [![CircleCI](https://circleci.com/gh/dhomane/cf-example-build-and-push/tree/master.svg?style=svg)](https://circleci.com/gh/dhomane/cf-example-build-and-push/tree/master)
 
 
