@@ -1,20 +1,5 @@
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                echo 'Hello world, this is multibranch pipeline for Dev branch'
-            }
-        }
-        stage('test') {
-            steps {
-                echo 'testing Dev...'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'deploying Dev...'
-            }
-        }
-    }
-}   
+node {
+    checkout scm
+    def dockerfile = './Dockerfile'
+    def customImage = docker.build("my-image:${env.BUILD_ID}", "-f ${dockerfile} ./") 
+}
