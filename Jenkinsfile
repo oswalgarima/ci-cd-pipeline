@@ -1,30 +1,20 @@
 pipeline {
-    agent none
+    agent any
     stages {
-        stage("Docker Permissions") {
-        agent any
+        stage('build') {
             steps {
-                sh "sudo chmod 666 /var/run/docker.sock"
+                echo 'Hello world, this is multibranch pipeline for Dev branch'
             }
         }
-        stage('Build') {
-            agent {
-                docker {
-                    image 'maven:3-alpine'
-                    args '-v $HOME/.m2:/root/.m2'
-                }
-            }
+        stage('test') {
             steps {
-                sh 'mvn clean package -DskipTests'
+                echo 'testing Dev...'
             }
         }
-        stage('Build') {
-        agent none
+        stage('deploy') {
             steps {
-                script {
-                    image = docker.build("test-image", "./")
-                }
+                echo 'deploying Dev...'
             }
         }
     }
-}
+}   
