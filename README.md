@@ -1,3 +1,5 @@
+[![Docker Image CI](https://github.com/dhomane/cf-example-build-and-push/actions/workflows/docker-image.yml/badge.svg)](https://github.com/dhomane/cf-example-build-and-push/actions/workflows/docker-image.yml)
+
 [![CircleCI](https://circleci.com/gh/dhomane/cf-example-build-and-push/tree/master.svg?style=svg)](https://circleci.com/gh/dhomane/cf-example-build-and-push/tree/master)
 
 
