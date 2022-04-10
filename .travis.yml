@@ -1,0 +1,14 @@
+sudo: required
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - echo "Nothing before Install"
+
+script:
+  - docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+after_success:
+  - echo "Success. Congratulations!!"
