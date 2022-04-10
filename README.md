@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/dhomane/cf-example-build-and-push.svg?branch=main)](https://app.travis-ci.com/dhomane/cf-example-build-and-push)
+
 # Example of building and pushing a  docker image 
 
 This is a Git repository that holds a Node application and a Dockerfile. The dockerfile is also at the root folder of the project.
