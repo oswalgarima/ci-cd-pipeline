@@ -1,0 +1,13 @@
+# Test YAML File
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fast-nginx
+  namespace: dev
+spec:
+  nodeSelector:
+    disk: fast
+  containers:
+  - name: nginx
+    image: nginx
